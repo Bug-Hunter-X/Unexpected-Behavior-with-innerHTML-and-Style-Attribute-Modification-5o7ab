@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+<style>
+  #myDiv { display: block; }
+</style>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correct solution: Manipulate the style object directly 
+    const myDiv = document.getElementById("myDiv");
+    myDiv.style.display = "none";
+  </script>
+</body>
+</html>
